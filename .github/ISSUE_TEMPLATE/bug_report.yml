@@ -1,0 +1,107 @@
+name: 🐛 Bug report
+description: Report an error, a crash, or an incorrect detection (false positive / missed PII)
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill in the sections below.
+        The more detail you give, the faster it can be fixed.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Preflight checklist
+      options:
+        - label: I searched existing issues and this hasn't been reported yet
+          required: true
+        - label: I'm using the latest version of `pii-protector`
+          required: false
+
+  - type: dropdown
+    id: bug-type
+    attributes:
+      label: Type of bug
+      options:
+        - Crash / exception / installation error
+        - Missed PII (false negative — something that should be detected wasn't)
+        - Wrong detection (false positive — flagged something that isn't PII)
+        - Wrong entity type / span / score
+        - Performance / latency issue
+        - Documentation error
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear description of the bug and what you expected instead.
+      placeholder: "I ran detect() on ... and expected ... but got ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: sample-text
+    attributes:
+      label: Sample input (⚠️ redact real PII)
+      description: |
+        The text you ran detection on. **Do NOT paste real personal data** —
+        replace it with fake/synthetic values that still reproduce the bug.
+      render: text
+    validations:
+      required: false
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Minimal code snippet that reproduces the issue.
+      render: python
+      placeholder: |
+        from pii_detector import AdvancedPIIDetector
+        d = AdvancedPIIDetector()
+        print(d.detect("..."))
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: pii-protector version
+      description: "Run: pip show pii-protector"
+      placeholder: "2.2.6"
+    validations:
+      required: true
+
+  - type: input
+    id: python-version
+    attributes:
+      label: Python version & OS
+      placeholder: "Python 3.11 on Windows 11 / Ubuntu 22.04 / macOS 14"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: extras
+    attributes:
+      label: Which layers are installed?
+      multiple: true
+      options:
+        - "Regex only (base install)"
+        - "presidio extra"
+        - "transformers extra"
+        - "full"
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / traceback
+      description: Paste any error output or the startup log lines (the "PII Detector ready | ..." line helps).
+      render: shell
+    validations:
+      required: false
