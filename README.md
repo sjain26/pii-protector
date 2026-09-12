@@ -76,9 +76,9 @@ Emails, phone numbers, credit cards, and a broad set of **India-specific** (PAN,
 
 This repo exists so the community can help make `pii-protector` better:
 
-- **Report a bug / detection error** → [open a Bug report](https://github.com/sjain26/pii-detector/issues/new?template=bug_report.yml)
-- **Request a feature or a new PII type** → [open a Feature request](https://github.com/sjain26/pii-detector/issues/new?template=feature_request.yml)
-- **Ask a question / share an idea** → [Discussions](https://github.com/sjain26/pii-detector/discussions)
+- **Report a bug / detection error** → [open a Bug report](https://github.com/sjain26/pii-protector/issues/new?template=bug_report.yml)
+- **Request a feature or a new PII type** → [open a Feature request](https://github.com/sjain26/pii-protector/issues/new?template=feature_request.yml)
+- **Ask a question / share an idea** → [Discussions](https://github.com/sjain26/pii-protector/discussions)
 - **Report a security/privacy issue** → see [SECURITY.md](SECURITY.md) (please don't open a public issue)
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for how to write a report that gets fixed fast.

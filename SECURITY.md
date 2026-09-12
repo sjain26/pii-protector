@@ -8,7 +8,7 @@
 
 Instead, report privately using one of these channels:
 
-- GitHub's [private vulnerability reporting](https://github.com/sjain26/pii-detector/security/advisories/new) (preferred), or
+- GitHub's [private vulnerability reporting](https://github.com/sjain26/pii-protector/security/advisories/new) (preferred), or
 - Email: **jainsatyam26@gmail.com** with the subject line `SECURITY: pii-protector`
 
 Please include:
@@ -26,6 +26,6 @@ You can expect an initial acknowledgement within a few days. Please give a reaso
 
 ## Out of scope
 
-- Missed detections on ordinary text — please file those as a normal [bug report](https://github.com/sjain26/pii-detector/issues/new?template=bug_report.yml)
+- Missed detections on ordinary text — please file those as a normal [bug report](https://github.com/sjain26/pii-protector/issues/new?template=bug_report.yml)
 
 Thank you for helping keep users' data safe. 🔒
