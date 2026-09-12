@@ -1,4 +1,4 @@
-.# pii-protector
+# pii-protector
 
 **Production-grade PII (Personally Identifiable Information) detection** with a sequential multi-model ensemble. Fast by design — 90%+ of texts are handled by the regex layer alone in under 3ms, with heavier NER models invoked only when needed.
 
